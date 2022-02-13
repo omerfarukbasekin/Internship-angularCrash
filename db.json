@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "firstName": "Ayşe",
+      "lastName": "yılmaz",
+      "email": "ayşe@gmail.com",
+      "mobile": "457984"
+    },
+    {
+      "id": 3,
+      "firstName": "özgü",
+      "lastName": "özgür",
+      "email": "özgü@gmail.com",
+      "mobile": "23324245"
+    },
+    {
+      "id": 4,
+      "firstName": "kerem",
+      "lastName": "keza",
+      "email": "kerem@gmail.com",
+      "mobile": "1312432"
+    },
+    {
+      "id": 5,
+      "firstName": "çslq",
+      "lastName": "keke",
+      "email": "çal",
+      "mobile": "kreekee"
+    },
+    {
+      "id": 6,
+      "firstName": "vcnbcv",
+      "lastName": "vcncvn",
+      "email": "vcncv",
+      "mobile": "vcncvn"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
