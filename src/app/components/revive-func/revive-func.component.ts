@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ApiService } from './api.service';
-import { CommentModel } from './comment-create.model';
+import { CommentModel } from './revive-func.model';
 
 @Component({
-  selector: 'app-comment-create',
-  templateUrl: './comment-create.component.html',
-  styleUrls: ['./comment-create.component.css']
+  selector: 'app-revive-func',
+  templateUrl: './revive-func.component.html',
+  styleUrls: ['./revive-func.component.css']
 })
 
-export class CommentCreateComponent implements OnInit {
+export class ReviveFuncComponent implements OnInit {
 
   formValue !: FormGroup;
   commentModelObj : CommentModel = new CommentModel();
@@ -18,14 +18,19 @@ export class CommentCreateComponent implements OnInit {
   constructor(private formbuilder: FormBuilder,
     private apiService: ApiService) { }
 
-
   ngOnInit(): void {
     this.formValue = this.formbuilder.group({
       firstName : [''],
-      lastName: [''],
       email : [''],
-      mobile : [''],
-      salary : ['']
+      revive : [''],
+      checkBox: [],
+      stars: {
+        starOne:[],
+        starTwo: [],
+        starTree: [],
+        starFour: [],
+        starFive: []
+      }
     })
 
     this.getAllCommment();
@@ -34,9 +39,10 @@ export class CommentCreateComponent implements OnInit {
   postCommentDetails(){
 
     this.commentModelObj.firstName = this.formValue.value.firstName;
-    this.commentModelObj.lastName = this.formValue.value.lastName;
     this.commentModelObj.email = this.formValue.value.email;
-    this.commentModelObj.mobile = this.formValue.value.mobile;
+    this.commentModelObj.revive = this.formValue.value.revive;
+    this.commentModelObj.checkBox=this.formValue.value.checkBox;
+    this.commentModelObj.stars=this.formValue.value.stars;
   
 
     this.apiService.postComment(this.commentModelObj)
@@ -59,6 +65,18 @@ export class CommentCreateComponent implements OnInit {
         this.commentData = res;
       })
     }
+
+
+  title = 'Star Rating';
+  starList: boolean[] = [true, true, true, true, true];
+  rating!: Number;
+
+
+  public stars: boolean[] = Array(5).fill(false);
+
+  public rate(rating: number) {
+    console.log('rating', rating);
+    this.stars = this.stars.map((_, i) => rating > i);
+    console.log('stars', this.stars);
   }
-
-
+}

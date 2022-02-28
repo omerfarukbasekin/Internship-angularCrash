@@ -1,54 +1,134 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
+      "img": "assets/images/user1.jpg",
       "id": 2,
-      "firstName": "Ayşe",
-      "lastName": "yılmaz",
-      "email": "ayşe@gmail.com",
-      "mobile": "457984"
+      "firstName": "James Anderson",
+      "email": "",
+      "revive": "Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in. Very well built theme, couldn't be happier with it. Can't wait for future updates to see what.",
+      "checkBox": "",
+      "stars": {
+        "starOne": [
+          ""
+        ],
+        "starTwo": [
+          ""
+        ],
+        "starTree": [
+          ""
+        ],
+        "starFour": [
+          ""
+        ],
+        "starFive": [
+          ""
+        ]
+      }
     },
     {
+      "img": "assets/images/user2.jpg",
+      "id": 2,
+      "firstName": "Sarah Taylor",
+      "email": "",
+      "revive": "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it.",
+      "checkBox": "",
+      "stars": {
+        "starOne": [
+          ""
+        ],
+        "starTwo": [
+          ""
+        ],
+        "starTree": [
+          ""
+        ],
+        "starFour": [
+          ""
+        ],
+        "starFive": [
+          ""
+        ]
+      }
+    },
+    {
+      "img": "assets/images/user3.jpg",
+      "id": 2,
+      "firstName": "David Warner",
+      "email": "",
+      "revive": "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it.",
+      "checkBox": "",
+      "stars": {
+        "starOne": [
+          ""
+        ],
+        "starTwo": [
+          ""
+        ],
+        "starTree": [
+          ""
+        ],
+        "starFour": [
+          ""
+        ],
+        "starFive": [
+          ""
+        ]
+      }
+    },
+    {
+      "img": "assets/images/user4.jpg",
+      "id": 2,
+      "firstName": "King Kong",
+      "email": "",
+      "revive": "Was really easy to implement and they quickly answer my additional questions! Very well built theme, couldn't be happier with it.",
+      "checkBox": "",
+      "stars": {
+        "starOne": [
+          ""
+        ],
+        "starTwo": [
+          ""
+        ],
+        "starTree": [
+          ""
+        ],
+        "starFour": [
+          ""
+        ],
+        "starFive": [
+          ""
+        ]
+      }
+    },
+    {
+      "img": "assets/images/user2.jpg",
       "id": 3,
-      "firstName": "özgü",
-      "lastName": "özgür",
-      "email": "özgü@gmail.com",
-      "mobile": "23324245"
+      "firstName": "asas",
+      "email": "asas",
+      "revive": "assssssssssssssssssssssssssssssssssssssssssss",
+      "checkBox": null,
+      "stars": {
+        "starOne": [],
+        "starTwo": [],
+        "starTree": [],
+        "starFour": [],
+        "starFive": []
+      }
     },
     {
+      "img": "assets/images/user2.jpg",
       "id": 4,
-      "firstName": "kerem",
-      "lastName": "keza",
-      "email": "kerem@gmail.com",
-      "mobile": "1312432"
-    },
-    {
-      "id": 5,
-      "firstName": "çslq",
-      "lastName": "keke",
-      "email": "çal",
-      "mobile": "kreekee"
-    },
-    {
-      "id": 6,
-      "firstName": "vcnbcv",
-      "lastName": "vcncvn",
-      "email": "vcncv",
-      "mobile": "vcncvn"
+      "firstName": "wwwwwwwwwwwwww",
+      "email": "wwwwwwwwwwww",
+      "revive": "wwwwwwwwww",
+      "checkBox": null,
+      "stars": {
+        "starOne": [],
+        "starTwo": [],
+        "starTree": [],
+        "starFour": [],
+        "starFive": []
+      }
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

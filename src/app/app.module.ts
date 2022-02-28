@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommentCreateComponent } from './components/comment-create/comment-create.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReviveFuncComponent } from './components/revive-func/revive-func.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BrowserModule } from '@angular/platform-browser';
     ContentComponent,
     FooterComponent,
     CommentCreateComponent,
-    SubreviveComponent
+    SubreviveComponent,
+    ReviveFuncComponent
   ],
   imports: [
     BrowserModule,

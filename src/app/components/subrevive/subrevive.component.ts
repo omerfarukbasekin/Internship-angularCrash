@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import commentsRev from 'src/assets/comments.json';
-
-import { CommentRev } from './subrevive.interface';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-subrevive',
@@ -9,25 +8,25 @@ import { CommentRev } from './subrevive.interface';
   styleUrls: ['./subrevive.component.css']
 })
 export class SubreviveComponent implements OnInit {
-
-  constructor() { }
-
-  comment:CommentRev[] = commentsRev.comment;
+  formValue !: FormGroup;
+  commentData !: any;
+  
+  constructor(private formbuilder: FormBuilder,
+    private apiService: ApiService) { }
 
   ngOnInit(): void {
-  }
-title = 'Star Rating';
-  starList: boolean[] = [true, true, true, true, true];
-  rating!: Number;
-
-
-  public stars: boolean[] = Array(5).fill(false);
-
-
-  public rate(rating: number) {
-    console.log('rating', rating);
-    this.stars = this.stars.map((_, i) => rating > i);
-    console.log('stars', this.stars);
+    this.formValue = this.formbuilder.group({
+      firstName : [''],
+      revive : [''],
+      img:['']
+    })
+    this.getAllCommment();
   }
 
+  getAllCommment(){
+    this.apiService.getComment()
+    .subscribe(res=>{
+      this.commentData = res;
+    })
+  }
 }

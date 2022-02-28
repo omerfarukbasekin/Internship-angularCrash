@@ -13,10 +13,10 @@
   </div>
   <div class="comments-section">
     <h3>error tane xd Reviwes <br/></h3>
-    <div class="commentRev container-fluid"  *ngFor="let item of comment">
+    <div class="commentRev container-fluid"  *ngFor="let row of commentData">
       <div class="row">
       <div class="col-md-2">
-      <img class="comsubImg" src="{{item.img}}" alt="image/jpg">
+      <img class="comsubImg" src="{{row.img}}" alt="image/jpg">
     </div>
     <div class="col-md-10 relativeSet">  
     <div class="comsubStar">
@@ -28,8 +28,8 @@
           <span class="fa fa-star"></span>
         </p>
       </div>
-      <span class="comsubName"><b>{{item.name}}</b></span>
-      <p class="comsubRev">{{item.revive}}</p>
+      <span class="comsubName"><b>{{row.firstName}}</b></span>
+      <p class="comsubRev">{{row.revive}}</p>
     </div>
   </div>
 
@@ -37,23 +37,5 @@
 </div>
 
   
-  <div class="commentSec">
-    <h3>Add a review</h3>
-    <p>Your email address will not be published. Required fields are marked<span> *</span></p>
-
-    <form>
-      <div class="row">
-        <div class="col-md-12"><span *ngFor="let star of stars; let i = index" (click)="rate(i + 1)">
-          <ng-container *ngIf="star; else noStar"><span class="fa fa-star checked"></span></ng-container>
-          <ng-template #noStar><span class="fa fa-star unchecked"></span></ng-template>
-        </span>
-        </div>
-        <div class="col-md-6"><input type="text" placeholder="Name *"></div>
-        <div class="col-md-6"><input  type="text" placeholder="Email *" /></div>
-        <div class="col-md-12"><textarea name="" id="" cols="30" rows="10" placeholder="Your review"></textarea></div>
-        <div class="col-md-12"><input class="chackboxSet" type="checkbox">
-        <label class="labelSet" for="test1">Save my name, email, and we bsite in this browser for the next time I comment.</label></div>
-        <div class="col-md-12"><button type="button" class="text-white btn btn-md submitBtn">Submit</button></div>
-      </div>
-    </form>
-  </div>
+ 
+<app-revive-func></app-revive-func>
