@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+This project created for my internship program. There was a example on internet and I make an clone of [this mockup](https://apzel-ng.envytheme.com/products-details) page.
+Responsive Bootstrap, Angular and Json prject.
+
+HTML page image![ApzelInternship](https://github.com/omerfarukbasekin/angularCrash-PC/blob/main/apzelintern-ss-07.png)
