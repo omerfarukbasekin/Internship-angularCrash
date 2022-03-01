@@ -32,3 +32,13 @@ This project created for my internship program. There was a example on internet 
 Responsive Bootstrap, Angular and Json prject.
 
 HTML page image![ApzelInternship](https://github.com/omerfarukbasekin/angularCrash-PC/blob/main/apzelintern-ss-07.png)
+
+
+inpath =>
+
+npm insall
+
+### ng serve --open
+
+### npm i -g json-server
+### json-server --watch db.json
